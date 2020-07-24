@@ -19,5 +19,22 @@ module.exports = {
                 fileName: `types/graphqlTypes.d.ts`,
             },
         },
+        "gatsby-plugin-postcss",
+        "gatsby-plugin-emotion",
+        {
+            resolve: "gatsby-plugin-purgecss",
+            options: {
+                content: [
+                    require("path").join(
+                        process.cwd(),
+                        "src/**/!(*.d).{js,jsx,ts,tsx,md,mdx}"
+                    ),
+                ],
+                printRejected: true,
+                develop: true,
+                tailwind: true,
+                whitelist: ["emoji"],
+            },
+        },
     ]
 }
