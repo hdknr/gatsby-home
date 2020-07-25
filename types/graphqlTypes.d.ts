@@ -1402,8 +1402,6 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___resolve'
   | 'pluginCreator___name'
   | 'pluginCreator___version'
-  | 'pluginCreator___pluginOptions___isTSX'
-  | 'pluginCreator___pluginOptions___allExtensions'
   | 'pluginCreator___pluginOptions___fileName'
   | 'pluginCreator___pluginOptions___content'
   | 'pluginCreator___pluginOptions___printRejected'
@@ -1593,8 +1591,6 @@ export type SitePluginFieldsEnum =
   | 'resolve'
   | 'name'
   | 'version'
-  | 'pluginOptions___isTSX'
-  | 'pluginOptions___allExtensions'
   | 'pluginOptions___fileName'
   | 'pluginOptions___content'
   | 'pluginOptions___printRejected'
@@ -1711,8 +1707,6 @@ export type SitePluginPackageJsonPeerDependenciesFilterListInput = {
 };
 
 export type SitePluginPluginOptions = {
-  isTSX?: Maybe<Scalars['Boolean']>;
-  allExtensions?: Maybe<Scalars['Boolean']>;
   fileName?: Maybe<Scalars['String']>;
   content?: Maybe<Array<Maybe<Scalars['String']>>>;
   printRejected?: Maybe<Scalars['Boolean']>;
@@ -1724,8 +1718,6 @@ export type SitePluginPluginOptions = {
 };
 
 export type SitePluginPluginOptionsFilterInput = {
-  isTSX?: Maybe<BooleanQueryOperatorInput>;
-  allExtensions?: Maybe<BooleanQueryOperatorInput>;
   fileName?: Maybe<StringQueryOperatorInput>;
   content?: Maybe<StringQueryOperatorInput>;
   printRejected?: Maybe<BooleanQueryOperatorInput>;
