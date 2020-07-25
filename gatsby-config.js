@@ -30,5 +30,6 @@ module.exports = {
         whitelist: ["emoji"],
       },
     },
+    "gatsby-plugin-styled-components",
   ],
 }
