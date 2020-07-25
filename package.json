@@ -11,7 +11,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@emotion/core": "^10.0.28",
@@ -33,6 +34,7 @@
     "gatsby-plugin-styled-components": "^3.3.10",
     "gatsby-plugin-theme-ui": "^0.3.0",
     "gatsby-plugin-typescript": "^2.4.16",
+    "jest": "^26.1.0",
     "postcss": "^7.0.32",
     "purgecss": "^2.3.0",
     "react": "^16.12.0",
